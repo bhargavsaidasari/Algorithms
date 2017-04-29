@@ -1,2 +1,3 @@
 # Algorithms
-Data Structures and Algorithms Coursera
+Data Structures and Algorithms Coursera Assignment Solutions
+
