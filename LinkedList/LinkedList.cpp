@@ -68,6 +68,28 @@ Node* Insert_specifiedposition(Node* head,int data,int position){
 
 }
 
+Node* Delete(Node* head,int posiion){
+	Node * naya=new Node();
+	
+	if(position==0){
+		head=head->next;
+		return(head);}
+	else{	
+	Node* temp=head;
+	for(int i=0;i<=position-1;i++){
+		if(i==position-1){
+		        Node* inter=temp->next;
+			
+			inter=inter->next;
+			temp->next=inter;
+
+			}
+			
+		else{temp=temp->next;}}	
+	}
+	return(head);
+	}
+
 int main(){
 
 	int numElements;
