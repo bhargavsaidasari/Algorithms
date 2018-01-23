@@ -13,7 +13,7 @@ Node* Insert_tail(Node* head,int data){
 	naya->next=NULL;
 	head=naya;
 	Node *counter=head;
-	return head;
+	
 
     
   // Complete this method
@@ -36,6 +36,16 @@ Node* Insert_tail(Node* head,int data){
 
 }
 
+Node* Insert_head(Node* head,int data){
+
+	Node *naya=new Node();
+	naya->data=data;
+	naya->next=head;
+	head=naya;
+	return(head);
+	
+}
+
 int main(){
 
 	int numElements;
@@ -44,8 +54,9 @@ int main(){
 	Node* init=NULL;
 	for(int i=0;i<numElements;i++){
 		cin>>input;	
-		init=Insert(init,input);	
+		init=Insert_tail(init,input);	
 	}
+	
 	return(0);}
 
 	
