@@ -89,6 +89,17 @@ Node* Delete(Node* head,int posiion){
 	}
 	return(head);
 	}
+void printReverse(Node* head){
+        
+	Node* temp=head;
+        if(temp==NULL){
+        	return;}
+        ReversePrint(temp->next);
+        cout<<temp->data<<endl;
+}
+	
+	
+	
 
 int main(){
 
